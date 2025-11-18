@@ -20,6 +20,7 @@ print(x / 2.0)
 # N维数组
 A = np.array([[1,2],[3,4]])
 print(A)
+print(np.ndim)
 print(A.shape)
 print(A.dtype)
 
@@ -41,3 +42,11 @@ print(X)
 # mask
 print(X > 15)
 print(X[X > 15])
+
+# 矩阵乘法
+A = np.array([[1,2],[3,4]])
+print(A.shape)
+B = np.array([[5,6],[7,8]])
+print(B.shape)
+C = np.dot(A, B)
+print(C)
